@@ -10,11 +10,11 @@ class Solution {
         }
         
         for(int i = 0; i < photo.length ; i++){
-            Integer sum = 0;
+            int sum = 0;
             for(String p : photo[i]){
                 sum += data.get(p) != null ? data.get(p) : 0;
             }
-            result[i] = (int) sum;
+            result[i] = sum;
         }
         
         
